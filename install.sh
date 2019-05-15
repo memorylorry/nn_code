@@ -1,5 +1,5 @@
 # 默认安装包的清单
-installation_list=('pandas' 'matplotlib' 'sklearn')
+installation_list=('pandas' 'matplotlib' 'sklearn' 'lxml' 'tushare')
 # 使用镜像的地址
 mirror_url=https://mirrors.aliyun.com/pypi/simple/
 
