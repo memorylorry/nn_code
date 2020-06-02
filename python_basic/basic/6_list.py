@@ -36,3 +36,9 @@ print(bicycles)
 
 ## 数组长度
 print(len(bicycles))
+
+
+# 遍历列表
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician)
