@@ -2,41 +2,46 @@
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[0].title())
 
-# 追加元素
-bicycles.append('add1')
 
-# 插入元素
-bicycles.insert(1,'add2')
-print(bicycles)
-
-# 删除元素
-# 根据标记删除
-del bicycles[1]
-# 利用pop()删除
-res1 = bicycles.pop()
-# 利用值来删除
-bicycles.remove('cannondale')
+# P1 - 增
+bicycles.append('add1') # 在列表后追加元素
+bicycles.insert(1,'add2') # 在索引为1的位置，插入元素
 print(bicycles)
 
 
-# 组织列表
-## 使用方法 sort() 对列表进行永久性排序
-bicycles.sort()
-print(bicycles)
-bicycles.sort(reverse=True)
-print(bicycles)
-
-## 使用函数 sorted() 对列表进行临时排序(需要赋值回来)
-bicycles = sorted(bicycles)
+# P2 - 删
+res1 = bicycles.pop() # m2. 使用pop函数，从列表尾部弹出1个元素，并通过返回值返回
+del bicycles[1] # m2. 直接根据索引位删除元素
+bicycles.remove('cannondale') # m3. 根据值，来删除
 print(bicycles)
 
-## 倒着
-bicycles.reverse()
+
+# P3 - 改
+bicycles[0] = 'motor' # 根据索引位，更改元素的值
 print(bicycles)
 
-## 数组长度
-print(len(bicycles))
 
+# P4 - 查
+# 目前python提供的基础list，暂时未提供查询操作，需要自己实现！
+for idx,val in enumerate(bicycles):
+    if val == 'redline':
+        print(idx) # 打印匹配项的索引值
+        break
+
+
+# Other - 组织列表
+bicycles.sort() # 使用方法 sort() 对列表进行永久性排序(字典排序、值的升序)
+print(bicycles)
+bicycles.sort(reverse=True) # 可以用reverse参数设置，是否为将序排列
+print(bicycles)
+
+bicycles = sorted(bicycles) # 使用函数 sorted() 对列表进行临时排序(需要赋值回来)
+print(bicycles)
+
+bicycles.reverse() # 到序
+print(bicycles)
+
+print(len(bicycles)) # 数组长度
 
 # 遍历列表
 magicians = ['alice', 'david', 'carolina']
