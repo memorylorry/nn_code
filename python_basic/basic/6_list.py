@@ -10,7 +10,7 @@ print(bicycles)
 
 
 # P2 - 删
-res1 = bicycles.pop() # m2. 使用pop函数，从列表尾部弹出1个元素，并通过返回值返回
+res1 = bicycles.pop() # m1. 使用pop函数，从列表尾部弹出1个元素，并通过返回值返回
 del bicycles[1] # m2. 直接根据索引位删除元素
 bicycles.remove('cannondale') # m3. 根据值，来删除
 print(bicycles)
