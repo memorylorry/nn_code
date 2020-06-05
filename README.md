@@ -11,5 +11,6 @@
 
 ### 机器学习(ML)
 1. [Scikit-Learn与TensorFlow机器学习实用指南](./ref/Scikit-Learn与TensorFlow机器学习实用指南.pdf)
+2. [机器学习_周志华](./ref/机器学习_周志华.pdf)
 
 ### 机器视觉(CV)
