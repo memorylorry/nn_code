@@ -12,5 +12,6 @@
 1. [Scikit-Learn与TensorFlow机器学习实用指南](./ref/Scikit-Learn与TensorFlow机器学习实用指南.pdf)
 2. [机器学习_周志华](./ref/机器学习_周志华.pdf)
 3. [吴恩达的机器学习基础](https://www.bilibili.com/video/BV164411b7dx?from=search&seid=10524356999059503503)
+4. [Google机器学习速成课](https://developers.google.com/machine-learning/crash-course/ml-intro)
 
 ### 机器视觉(CV)
