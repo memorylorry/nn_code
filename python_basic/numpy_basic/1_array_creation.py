@@ -12,7 +12,14 @@ a4 = np.zeros((3,4)) # 返回值都为0的矩阵
 print(a4)
 a5 = np.full((3,4),2) # 返回值都为'指定值'的矩阵
 print(a5)
-
+a6 = np.zeros_like(a1) # 创建一个和a1相同形状的0矩阵
+print(a6)
+a7 = np.ones_like(a1) # 创建一个和a1相同形状的1矩阵
+print(a7)
+a8 = np.empty_like(a4)  # 创建一个和a4相同形状的空矩阵
+print(a8)
+a9 = np.full_like(a4,9) # 创建一个和a4相同形状的9矩阵
+print(a9)
 
 # P2 用已有数据构造数组 (From existing data)
 arr1 = [[1,2,3],[4,5,6]]
