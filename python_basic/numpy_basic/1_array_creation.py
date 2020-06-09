@@ -84,6 +84,21 @@ ar4 = np.linspace((-1,-2),(1,2))
 # print(ar4)
 
 # P6 Building matrices
+arr1 = np.diag((1,2,3)) # 创建对角矩阵
+print(arr1)
+arr2 = np.diag((1,2,3),k=1) # 指定k值后（k>0），表示值相对主角线，向上偏k个位置；反则，向下偏。
+
+arr3 = np.diagflat([[1,2],[3,4]]) # 使用diagflat函数，先将数组摊平成1维数组，然后生成对角矩阵;也可以指定k值
+print(arr3)
+
+# 用已有矩阵，生成上三角、下三角矩阵
+arr4 = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(np.tril(arr4)) # 用tril生成下三角的矩阵
+print(np.triu(arr4)) # 用triu生成上三角的矩阵
+
+# 用vander函数生成范德蒙行列式(vandermonde matrix)
+arr5 = np.vander((1,2,3,4),increasing=True) # 指定increasing=True，则幂的数字，从左向右增长；不指定，则从右向左
+print(np.flipud(arr5.transpose()))
 
 
 # P7 The Matrix class
