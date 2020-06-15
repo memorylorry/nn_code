@@ -22,7 +22,7 @@
 
 ### 相关错误处理
 1. [github访问慢](https://www.jianshu.com/p/0493dcc15d6f)
-2. `raw.githubusercontent.com can't be reached!` 答：请用如同1种的方法，加入 raw.githubusercontent.com域名的ip到hosts文件。
+2. `raw.githubusercontent.com can't be reached!` 答：请用如同1中的方法，加入 raw.githubusercontent.com域名的ip到hosts文件。
 
 ### 贡献者
 1. memorylorry
