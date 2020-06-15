@@ -16,3 +16,13 @@
 5. [Deep Learning - 花书EN](https://www.deeplearningbook.org/)
 
 ### 机器视觉(CV)
+1. [PyTorch官方文档](https://pytorch.org/)
+2. [TensorFlow官方文档](https://tensorflow.google.cn/)
+3. PyTorch学习视频(请内部人员在QQ群内获取)
+
+### 相关错误处理
+1. [github访问慢](https://www.jianshu.com/p/0493dcc15d6f)
+2. `raw.githubusercontent.com can't be reached!` 答：请用如同1种的方法，加入 raw.githubusercontent.com域名的ip到hosts文件。
+
+### 贡献者
+1. memorylorry
