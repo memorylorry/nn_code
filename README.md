@@ -16,7 +16,7 @@
 5. [Deep Learning - 花书EN](https://www.deeplearningbook.org/)
 
 ### 机器视觉(CV)
-1. [PyTorch官方文档](https://pytorch.org/)
+1. [PyTorch官方文档](https://pytorch.org/) [`中文`](https://pytorch.apachecn.org/docs/1.4/)
 2. [TensorFlow官方文档](https://tensorflow.google.cn/)
 3. PyTorch学习视频(请内部人员在QQ群内获取)
 
