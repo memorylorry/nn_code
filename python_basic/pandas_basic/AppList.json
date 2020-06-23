@@ -1,0 +1,243 @@
+{
+    "code": 0,
+    "message": "success",
+    "data": [
+        {
+            "id": "1",
+            "name": "常用组",
+            "type": 0,
+            "apps": [
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconad",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbell",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbackpack",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbadge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconatom",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconanchor",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbatteries",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbill",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbridge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "备用组",
+            "type": 0,
+            "apps": [
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconad",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbell",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbackpack",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbadge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconatom",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconanchor",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbatteries",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbill",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbridge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "附加组",
+            "type": 0,
+            "apps": [
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconad",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbell",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbackpack",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbadge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconatom",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconanchor",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "11",
+                    "name": "一笔交易",
+                    "logo": "#iconbatteries",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "12",
+                    "name": "好借好还",
+                    "logo": "#iconbill",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                },
+                {
+                    "id": "13",
+                    "name": "好生意",
+                    "logo": "#iconbridge",
+                    "type": 1,
+                    "href": "",
+                    "badge": "new"
+                }
+            ]
+        }
+    ]
+}
