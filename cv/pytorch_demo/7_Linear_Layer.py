@@ -2,12 +2,13 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt
 
+device = torch.device('cuda')
 # load data
 df = np.loadtxt('data.csv',delimiter=',',usecols=(2,3,4),skiprows=1)
 x_r = df[:,0]
 y_r = df[:,1]
 
-device = torch.device('cpu')
+device = torch.device('cuda')
 x = torch.tensor(x_r,device=device,dtype=torch.float).reshape(-1,1)
 y = torch.tensor(y_r,device=device,dtype=torch.float).reshape(-1,1)
 
@@ -16,7 +17,9 @@ learning_rage = 1e-6
 line = torch.nn.Linear(1,1)
 loss_fun = torch.nn.MSELoss(reduction='sum')
 
-for i in range(100):
+# line.to(device)
+
+for i in range(10000):
     # predict
     y_pred = line(x)
 
@@ -36,6 +39,6 @@ for i in range(100):
 
 # plot
 plt.plot(x_r,y_r,'rx')
-yx = y_pred.clone().detach().numpy()
+yx = y_pred.clone().cpu().detach().numpy()
 plt.plot(x_r,yx,'k-')
 plt.show()
