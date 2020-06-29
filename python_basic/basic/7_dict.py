@@ -25,9 +25,17 @@ print(user_0['username'])  # 通过key访问;若查找不存在的key的值,会�
 print(user_0)
 
 
-# 遍历dict
+# method 1. 遍历dict
 for key,value in user_0.items():
-    print(key + ' : '+value)
+    print('method 1 : ',key + ' : '+value)
+
+# method 2. 遍历dict
+for key in user_0.keys():
+    print('method 2 : ',key + ' : '+user_0[key])
+
+# method 3. 遍历dict
+for idx,key in enumerate(user_0.keys()):
+    print('method 3 : ',key + ' : '+user_0[key],'pos:',idx)
 
 
 # 其他操作
