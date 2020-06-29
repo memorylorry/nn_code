@@ -9,23 +9,40 @@ x_r = df[:,0]
 y_r = df[:,1]
 
 device = torch.device('cuda')
-x = torch.tensor(x_r,device=device,dtype=torch.float).reshape(-1,1)
-y = torch.tensor(y_r,device=device,dtype=torch.float).reshape(-1,1)
+x = torch.tensor(x_r,dtype=torch.float,device=device).reshape(-1,1)
+y = torch.tensor(y_r,dtype=torch.float,device=device).reshape(-1,1)
 
 # prepare model
 learning_rage = 1e-6
 line = torch.nn.Linear(1,1)
 loss_fun = torch.nn.MSELoss(reduction='sum')
+losses=[]
 
-# line.to(device)
+# line mode to cuda
+line.to(device)
 
-for i in range(10000):
+# enable inactive
+plt.ion()
+plt.show()
+
+for i in range(1000):
     # predict
     y_pred = line(x)
 
     # count loss
     loss = loss_fun(y_pred,y)
-    print(loss.item())
+    losses.append(loss.item())
+    print(loss)
+
+    # plot
+    if i%10==0:
+        plt.subplot(2,1,1)
+        plt.scatter(x_r,y_r)
+        yp = y_pred.clone().cpu().detach().numpy()
+        plt.plot(x_r,yp,'r-')
+        plt.subplot(2, 1, 2)
+        plt.plot(losses,'r-')
+        plt.pause(0.5)
 
     # count grad
     loss.backward()
@@ -36,9 +53,4 @@ for i in range(10000):
 
         line.zero_grad()
 
-
-# plot
-plt.plot(x_r,y_r,'rx')
-yx = y_pred.clone().cpu().detach().numpy()
-plt.plot(x_r,yx,'k-')
-plt.show()
+plt.ioff()
