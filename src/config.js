@@ -1,12 +1,14 @@
 let config = {
-    profile:'' // 设置运行模式: prod:test:local（缺省）
+    profile:'prod' // 设置运行模式: prod:test:local（缺省）
 };
 
 let prod_url = {
-    url_prefix:''
+    root:'/py-demo',
+    url_prefix:'/py-demo/dist/data'
 };
 let local_url = {
-    url_prefix:'/dist/data/'
+    root:'',
+    url_prefix:'/dist/data'
 };
 
 

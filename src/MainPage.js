@@ -33,7 +33,7 @@ export default class MainRoute extends React.Component {
     }
 
     componentDidMount(){
-        let url = config.resources.url_prefix + '/menu.json';
+        let url = config.resources.root + config.resources.url_prefix + '/menu.json';
         request
             .get(url)
             .end((err,resp)=>{
