@@ -58,7 +58,7 @@ export default class MainRoute extends React.Component {
         let root = config.resources.root;
         if(e.type=='component'){
             return <Menu.Item key={idx} >
-                    <Link to={root!='/'?root:''+e.href}>{e.name}</Link>
+                    <Link to={(root!='/'?root:'')+e.href}>{e.name}</Link>
                 </Menu.Item>;
         }
         if(e.type=='link'){
@@ -104,7 +104,7 @@ export default class MainRoute extends React.Component {
                     </Menu>
                     <Route exact path="/" component={ContentPage} />
                     <Route exact path="/py-demo" component={ContentPage} />
-                    <Route path={root!='/'?root:''+"/DefaultPage"} component={DefaultPage} />
+                    <Route path={(root!='/'?root:'')+"/DefaultPage"} component={DefaultPage} />
                 </div>
             </BrowserRouter>
         )
