@@ -89,7 +89,7 @@ export default class ContentPage extends React.Component {
     }
 
     componentDidMount(){
-        let url = config.resources.root + config.resources.url_prefix + '/main_page.json';
+        let url = config.resources.url_prefix + '/main_page.json';
         request
             .get(url)
             .end((err,resp)=>{
