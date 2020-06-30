@@ -62,7 +62,7 @@ export default class MainRoute extends React.Component {
         }
         if(e.type=='link'){
             return <Menu.Item key={idx} type='link'>
-                    <a target='_blank' href={e.href}>GitHub</a>
+                    <a target='_blank' href={e.href}>{e.name}</a>
                 </Menu.Item>;
         }
     }
@@ -82,7 +82,7 @@ export default class MainRoute extends React.Component {
                     <SubMenu key={idx} title={e.name} type='SubMenu'>
                         {
                             e.data.map((sub_e,sub_idx)=>{
-                                return this.createDefault(sub_e,"setting:"+sub_idx);
+                                return this.createDefault(sub_e,"setting:"+((idx+1)*10+sub_idx));
                             })
                         }
                     </SubMenu>

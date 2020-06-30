@@ -8,31 +8,53 @@
             "type":"component"
         },
         {
-            "name":"默认",
-            "skip":1,
-            "href":"/DefaultPage",
+            "name":"学习路径",
+            "href":"/DefaultPage?content=学习路径页正在建设中，尽请期待。",
             "type":"component"
         },
         {
-            "name":"子集合",
+            "name":"深度学习",
             "href":"/",
             "type":"SubMenu",
-            "skip":1,
             "data":[
                 {
-                    "name":"学习清单",
-                    "href":"/",
+                    "name":"PyTorch",
+                    "href":"/DefaultPage?content=PyTorch学习页正在建设中，尽请期待。",
                     "type":"component"
                 },
                 {
-                    "name":"默认",
-                    "href":"/DefaultPage",
+                    "name":"TensorFlow",
+                    "href":"/DefaultPage?content=TensorFlow学习页正在建设中，尽请期待。",
                     "type":"component"
                 }
             ]
         },
         {
-            "name":"学习清单",
+            "name":"金融杂谈",
+            "href":"/",
+            "type":"SubMenu",
+            "skip":1,
+            "data":[
+                {
+                    "name":"货币基础",
+                    "href":"/DefaultPage?content=货币基础学习页正在建设中，尽请期待。",
+                    "type":"component"
+                },
+                {
+                    "name":"证券投资",
+                    "href":"/DefaultPage?content=证券投资学习页正在建设中，尽请期待。",
+                    "type":"component"
+                }
+            ]
+        },
+        {
+            "name":"GitHub",
+            "href":"https://github.com/memorylorry/py-demo",
+            "type":"link"
+        },
+        {
+            "name":"跳过项目，请指定skip字段",
+            "skip":1,
             "href":"https://github.com/memorylorry/py-demo",
             "type":"link"
         }
