@@ -95,7 +95,7 @@ export default class MainRoute extends React.Component {
                 <div className='common-page'>
                     <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
                         <Menu.Item key="logo" style={{fontSize:0,background:'#f9a623'}} >
-                            <a href='.'>
+                            <a href={config.resources.root}>
                                 <img src='./dist/png/logo.png' />.
                             </a>
                         </Menu.Item>

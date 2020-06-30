@@ -3,9 +3,11 @@ let config = {
 };
 
 let prod_url = {
+    root:'/py-demo',
     url_prefix:'/py-demo/dist/data'
 };
 let local_url = {
+    root:'/',
     url_prefix:'/dist/data'
 };
 
