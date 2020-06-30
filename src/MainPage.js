@@ -95,13 +95,14 @@ export default class MainRoute extends React.Component {
                 <div className='common-page'>
                     <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
                         <Menu.Item key="logo" style={{fontSize:0,background:'#f9a623'}} >
-                            <a href='/'>
+                            <a href='.'>
                                 <img src='./dist/png/logo.png' />.
                             </a>
                         </Menu.Item>
                         {element}
                     </Menu>
                     <Route exact path="/" component={ContentPage} />
+                    <Route exact path="/py-demo" component={ContentPage} />
                     <Route path="/DefaultPage" component={DefaultPage} />
                 </div>
             </BrowserRouter>
