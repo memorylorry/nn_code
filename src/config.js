@@ -1,5 +1,5 @@
 let config = {
-    profile:'prod3' // 设置运行模式: prod:test:local（缺省）
+    profile:'prod' // 设置运行模式: prod:test:local（缺省）
 };
 
 let prod_url = {
