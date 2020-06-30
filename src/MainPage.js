@@ -55,9 +55,10 @@ export default class MainRoute extends React.Component {
 
     
     createDefault(e,idx){
+        let root = config.resources.root;
         if(e.type=='component'){
             return <Menu.Item key={idx} >
-                    <Link to={e.href}>{e.name}</Link>
+                    <Link to={root!='/'?root:''+e.href}>{e.name}</Link>
                 </Menu.Item>;
         }
         if(e.type=='link'){
@@ -89,13 +90,13 @@ export default class MainRoute extends React.Component {
                 );
             }
         });
-
+        let root = config.resources.root;
         return (
             <BrowserRouter>
                 <div className='common-page'>
                     <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
                         <Menu.Item key="logo" style={{fontSize:0,background:'#f9a623'}} >
-                            <a href={config.resources.root}>
+                            <a href={root}>
                                 <img src='./dist/png/logo.png' />.
                             </a>
                         </Menu.Item>
@@ -103,7 +104,7 @@ export default class MainRoute extends React.Component {
                     </Menu>
                     <Route exact path="/" component={ContentPage} />
                     <Route exact path="/py-demo" component={ContentPage} />
-                    <Route path="/DefaultPage" component={DefaultPage} />
+                    <Route path={root!='/'?root:''+"/DefaultPage"} component={DefaultPage} />
                 </div>
             </BrowserRouter>
         )
