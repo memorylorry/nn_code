@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import { Menu } from 'antd';
 const { SubMenu } = Menu;
-import { Route, Switch, Link, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, Link, BrowserRouter as  Router} from 'react-router-dom';
 
 import NotLiveRoute from 'react-live-route'
 import { withRouter } from 'react-router-dom'
@@ -92,7 +92,7 @@ export default class MainRoute extends React.Component {
         });
         let root = config.resources.root;
         return (
-            <BrowserRouter>
+            <Router>
                 <div className='common-page'>
                     <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
                         <Menu.Item key="logo" style={{fontSize:0,background:'#f9a623'}} >
@@ -106,7 +106,7 @@ export default class MainRoute extends React.Component {
                     <Route exact path="/py-demo" component={ContentPage} />
                     <Route path={(root!='/'?root:'')+"/DefaultPage"} component={DefaultPage} />
                 </div>
-            </BrowserRouter>
+            </Router>
         )
     }
 }
