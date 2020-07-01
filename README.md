@@ -1,7 +1,7 @@
 ## Python & ML & CV 参考书目
 
 ### 公告
-7月1日，将项目名Py-Demo改为memorylorry.github.io，以方便页面展示。
+7月1日开始，将项目名Py-Demo的页面，转移放置到memorylorry.github.io中，以方便页面展示。
 
 ### Python
 1. [Python编程从入门到实践](./ref/Python编程从入门到实践.pdf) [`code`](./python_basic/basic)
