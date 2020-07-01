@@ -20,7 +20,7 @@ export default class ContentPage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            main_title:'模范标题',
+            main_title:'',
             menu:[]
         };
     }

@@ -1,1 +1,1 @@
-window.WEBPACK_ASSETS = {"MainPage":{"js":"/dist/MainPage.1593570046688.js"}}
+window.WEBPACK_ASSETS = {"MainPage":{"js":"/dist/MainPage.1593570382038.js"}}
