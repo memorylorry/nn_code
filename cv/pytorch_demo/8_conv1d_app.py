@@ -43,7 +43,7 @@ plt.plot(x5,ma5,'-',color='#ffcc00',label='MA5')
 plt.plot(x10,ma10,'-',color='#cc0099',label='MA10')
 plt.plot(x20,ma20,'-',color='#00ff00',label='MA20')
 plt.legend()
-plt.xlabel('x')
+plt.xlabel('day of x')
 plt.ylabel('price')
 
 plt.show()
