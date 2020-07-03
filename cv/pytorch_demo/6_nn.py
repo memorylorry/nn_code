@@ -32,7 +32,7 @@ for t in range(10000):
     # override the __call__ operator so you can call them like functions. When
     # doing so you pass a Tensor of input data to the Module and it produces
     # a Tensor of output data.
-    print(x)
+    # print(x)
     y_pred = model(x)
 
     # Compute and print loss. We pass Tensors containing the predicted and true
