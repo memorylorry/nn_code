@@ -17,6 +17,17 @@ w = np.arange(1,len(df[0])+1)[::-1]
 twap = np.average(df[0],weights=w)
 print("TWAP is : " + str(twap))
 
+# 简单收益率
+arr = np.array([1,2,1.5,1.8,3])
+print(np.diff(arr)/arr[:-1])
+
+# 对数收益率
+res2 = np.diff(np.log(arr))
+print(res2)
+
+# 判断哪些收益率为负
+pos = np.where(res2<0)
+
 # variance
 var = np.var(df[0])
 print("variance is : " + str(var))
