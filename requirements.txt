@@ -20,6 +20,7 @@ kiwisolver==1.2.0
 lxml==4.5.1
 Markdown==3.2.2
 matplotlib==3.2.1
+mplfinance==0.12.6a3
 numpy==1.18.4
 oauthlib==3.1.0
 opt-einsum==3.2.1
@@ -40,6 +41,7 @@ simplejson==3.17.0
 six==1.15.0
 sklearn==0.0
 soupsieve==2.0.1
+TA-Lib==0.4.18
 tensorboard==2.2.2
 tensorboard-plugin-wit==1.6.0.post3
 tensorflow==2.2.0
