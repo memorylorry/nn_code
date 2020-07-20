@@ -24,5 +24,5 @@ apds = [
     mpf.make_addplot(signal,panel=1,color='#FF33CC',secondary_y=True)
 ]
 
-mpf.plot(df,type='candle',style='yahoo',volume=True,volume_panel=2,addplot=apds)
+mpf.plot(df,type='candle',style='yahoo',volume=False,volume_panel=2,addplot=apds,mav=[5,10,20,60,120])
 
