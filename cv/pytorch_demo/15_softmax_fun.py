@@ -7,7 +7,7 @@ x = torch.tensor([
     [3,7,5]
 ],dtype=torch.float)
 
-# 使用 softmax 函数计算每个特征的概率
+# 使用 softmax 函数计算每个特征的概率,最大的概率最大
 y= F.softmax(x,dim=1)
 print(y)
 
