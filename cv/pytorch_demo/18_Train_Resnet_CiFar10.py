@@ -83,23 +83,3 @@ npimg = torchvision.utils.make_grid(imgs,nrow=4,padding=0,normalize=True).cpu().
 npimg = np.transpose(npimg,(1,2,0))
 plt.imshow(npimg)
 plt.show()
-
-
-# count precision
-sum = 0
-right = 0
-dataiter = iter(trainloader)
-for images, labels in dataiter:
-    images = images.to(device)
-    labels = labels.to(device)
-
-    output = resnet50(images)
-    _, predicted = torch.max(output, dim=1)
-
-    res=labels-predicted
-    res=res[res==0]
-
-    sum += len(labels)
-    right += len(res)
-
-print("AP is : ",right/sum)
