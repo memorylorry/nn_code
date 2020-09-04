@@ -151,7 +151,7 @@ class PersonDataset(torch.utils.data.Dataset):
 
 
 # 初始化数据集
-voc_dataset = PersonDataset(batch_size=3,train_val='train',only_tp_case=True)
+voc_dataset = PersonDataset(batch_size=3,train_val='val',only_tp_case=False)
 
 
 # 加载模型
