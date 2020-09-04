@@ -29,9 +29,9 @@ class PersonDataset(torch.utils.data.Dataset):
             "Diningtable", "Dog", "Horse", "Motorbike", "Person", "Pottedplant", "Sheep", "Sofa",
             "Train", "Tvmonitor"
         ]
-        # 2. 存每一批文件名的列表
+        # 存每一批文件名的列表
         self.filename_batch = []
-        # 3. 存类对应的字段值，以便取用
+        # 存类对应的字段值，以便取用
         self._class_dict = {}
         # 将文件名进行分批
         self._init_fn()
