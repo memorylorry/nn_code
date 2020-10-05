@@ -95,4 +95,4 @@ def count_loss(loader):
 # count train loss
 print("Train loss is : ",count_loss(trainloader),"%")
 # count test loss
-print("Train loss is : ",count_loss(testloader),"%")
+print("Test loss is : ",count_loss(testloader),"%")
