@@ -73,9 +73,9 @@ report('melon','suger','ice')
 def report2(name:str,*toppings):
     pass
 
-# 2. 使用任意数量的关键字实参
+# 2. 使用任意数量的关键字实参(2个星的参数，不会包括前面的内容)
 def build_profile(name, **user_info):
-    print(user_info)
+    print('#build_profile',user_info)
 
 build_profile('xia',age=20,job='sporter')
 
