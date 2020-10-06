@@ -4,6 +4,7 @@ import torchvision.transforms as transforms
 import torch.nn.functional as F
 
 import warnings
+import os
 
 
 # conf
@@ -45,8 +46,10 @@ criterion = torch.nn.CrossEntropyLoss()
 
 
 # train
-# sd = torch.load('densenet.pkl')
-# model.load_state_dict(sd)
+model_name = 'densenet.pkl'
+if os.path.exists(model_name):
+    sd = torch.load(model_name)
+    model.load_state_dict(sd)
 for epoch in range(50):
     running_loss = 0
     for i, data in enumerate(trainloader, 0):
@@ -55,6 +58,8 @@ for epoch in range(50):
         optimizer.zero_grad()
         output = model(inputs)
         loss = criterion(output, labels)
+        print(loss.item())
+        print(type(loss))
         running_loss += loss.item()
 
         loss.backward()
@@ -66,7 +71,7 @@ for epoch in range(50):
             running_loss = 0.0
 
 # save model
-torch.save(model.state_dict(),'densenet.pkl')
+torch.save(model.state_dict(),model_name)
 
 
 # count loss
