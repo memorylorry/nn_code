@@ -10,7 +10,7 @@ import sys
 import warnings
 import json
 
-from utils.LossTracer import LossTracer
+from LossTracer import LossTracer
 
 
 class ModelRunner():
