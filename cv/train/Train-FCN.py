@@ -9,7 +9,6 @@ import os
 
 from utils.ProgressBar import ProgressBar
 from utils.ArrayPainter import convertArr2IMG
-from utils.LossTracer import LossTracer
 import torch.nn.functional as F
 
 import PIL
@@ -17,9 +16,6 @@ import PIL
 from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter()
 
-from utils.ProgressBar import ProgressBar
-from utils.ArrayPainter import convertArr2IMG
-from utils.LossTracer import LossTracer
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
