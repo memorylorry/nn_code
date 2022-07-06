@@ -17,7 +17,7 @@ idna==2.9
 joblib==0.15.1
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
-lxml==4.5.1
+lxml==4.9.1
 Markdown==3.2.2
 matplotlib==3.2.1
 mplfinance==0.12.6a3
